@@ -12,10 +12,8 @@ then
 	exit 999
 fi
 
-echo "Please enter mySQL user name: "
-read MYSQL_USER
-echo "Please enter mySQL user password: "
-read MYSQL_PASS
+MYSQL_USER=""
+MYSQL_PASS=""
 
 export ANT_HOME=`pwd`/ant
 if [ ! -x $ANT_HOME/bin/ant ]
